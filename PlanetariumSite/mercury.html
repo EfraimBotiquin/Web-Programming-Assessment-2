@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercury</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Skip -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <!-- Title -->
+        <h1>Mercury</h1>
+
+        <!-- Nav -->
+        <nav aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+
+            <!-- Active -->
+            <a href="mercury.html" class="active">Mercury</a>
+
+            <a href="venus.html">Venus</a>
+            <a href="earth.html">Earth</a>
+            <a href="mars.html">Mars</a>
+            <a href="jupiter.html">Jupiter</a>
+            <a href="saturn.html">Saturn</a>
+            <a href="uranus.html">Uranus</a>
+            <a href="neptune.html">Neptune</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <!-- Theme -->
+        <button class="theme-btn" onclick="toggleTheme()">Theme</button>
+    </header>
+
+    <main id="main-content">
+
+        <!-- About -->
+        <section>
+            <h2>About Mercury</h2>
+            <p>Mercury is the closest planet to the Sun and the smallest planet.</p>
+            <p>It has extreme temperatures and a cratered surface.</p>
+        </section>
+
+        <!-- Image -->
+        <section class="image-text1">
+            <img src="mercury.jpg" alt="Mercury planet showing rocky surface and craters">
+            <p> Mercury is the smallest planet in the Solar System and the one located closest to the Sun, making it the
+                innermost planet in our planetary system. It has a heavily cratered surface, a large iron-rich core at
+                its center, and almost no atmosphere to trap heat or protect it from space conditions. As a result,
+                Mercury experiences extreme temperature changes, with scorching hot days and freezing cold nights across
+                its surface. It also moves very quickly around the Sun, completing one full orbit in just 88 Earth days,
+                which makes it the fastest planet in the entire Solar System.</p>
+        </section>
+
+        <!-- More info -->
+        <section class="image-text1">
+            <p>Mercury's slow rotation creates a very unusual day-night cycle compared to most planets, meaning that a
+                single day on Mercury (from one sunrise to the next) lasts much longer than a Mercury year might
+                suggest. This happens because the planet rotates very slowly on its axis while it orbits the Sun
+                quickly, creating a unique timing pattern for daylight and darkness. Since Mercury has no moons and
+                almost no atmosphere to erode or protect its surface, it remains heavily covered with ancient impact
+                craters that have stayed unchanged for billions of years. These conditions make its surface look very
+                similar to how it was in the early history of the Solar System. Spacecraft missions such as Mariner 10
+                and MESSENGER have been extremely important in helping scientists study Mercury in detail. They provided
+                valuable data about its geology, chemical composition, magnetic field, and its unusual orbital and
+                rotational behavior.
+            </p>
+        </section>
+
+        <!-- Video -->
+        <section>
+            <h3>Educational Video</h3>
+            <p>This video explains the Mercury.</p>
+
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/XhKAxwfNW_c?si=qdysbuGY-gN7Fqkb"
+                title="Mercury educational video">
+            </iframe>
+        </section>
+
+        <!-- Facts -->
+        <section>
+            <h2>Key Facts</h2>
+            <ul>
+                <li>Distance from Sun: 57.9 million km</li>
+                <li>Number of Moons: 0</li>
+                <li>Type: Rocky Planet</li>
+                <li>Day Length: 59 Earth days</li>
+            </ul>
+        </section>
+
+        <!-- Button -->
+        <section>
+            <button onclick="showFact('mercury')">Show Fun Fact</button>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 BigPlanetarium</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

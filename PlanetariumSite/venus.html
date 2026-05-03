@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1>Venus</h1>
+
+        <nav aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="mercury.html">Mercury</a>
+            <a href="venus.html" class="active">Venus</a>
+            <a href="earth.html">Earth</a>
+            <a href="mars.html">Mars</a>
+            <a href="jupiter.html">Jupiter</a>
+            <a href="saturn.html">Saturn</a>
+            <a href="uranus.html">Uranus</a>
+            <a href="neptune.html">Neptune</a>
+            <a href="about.html">About</a>
+        </nav>
+        <button class="theme-btn" onclick="toggleTheme()">Theme</button>
+    </header>
+
+    <main id="main-content">
+
+        <section>
+            <h2>About Venus</h2>
+            <p>Venus is the second planet from the Sun and is known as the hottest planet in the solar system. Its thick
+                atmosphere traps heat, creating a strong greenhouse effect.</p>
+            <p>The planet is covered with clouds of sulfuric acid, making it very bright in the sky. Venus rotates very
+                slowly and in the opposite direction compared to most planets.</p>
+        </section>
+
+        <section class="image-text1">
+            <img src="venus.jpg"
+                alt="Venus showing a thick cloudy atmosphere surrounding the planet">
+            <p>Venus is the second planet from the Sun and is often called Earth’s twin because it is similar in size
+                and mass. However, its environment is extremely different from Earth in many important ways. Venus has a
+                thick atmosphere made mostly of carbon dioxide, with clouds of sulfuric acid that trap heat and create a
+                powerful runaway greenhouse effect. This intense heat buildup makes the surface extremely hostile and
+                not suitable for life as we know it. This makes Venus the hottest planet in the Solar System, even
+                hotter than Mercury, despite being farther from the Sun. The pressure on the surface is also extremely
+                high, and conditions are harsh enough to crush most spacecraft.</p>
+        </section>
+
+        <section class="image-text2">
+            <p>The planet rotates very slowly and in the opposite direction to most planets, which is known as
+                retrograde rotation. This means that on Venus, the Sun would appear to rise in the west and set in the
+                east, which is the opposite of what we experience on Earth. Its rocky surface includes vast plains,
+                mountain ranges, and volcanic features, showing that it has a complex geological history. However, the
+                dense and cloudy atmosphere makes detailed observation of the surface very difficult, so most of what
+                scientists know comes from radar imaging and space missions. Because of these extreme conditions, Venus
+                is not easy to explore directly. Venus remains very important for scientists because it helps them
+                understand how planetary atmospheres behave under extreme conditions, how climate change can develop on
+                a large scale, and why Earth evolved into a more habitable world while Venus became so hostile and
+                different over time.
+            </p>
+        </section>
+
+        <section>
+            <h3>Educational Video</h3>
+            <p>This video explains the Venus.</p>
+
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/zqHFeCLnyOM?si=EHNYdm2z3fKacx-U"
+                title="Venus educational video">
+            </iframe>
+        </section>
+
+        <section>
+            <h2>Key Facts</h2>
+            <ul>
+                <li>Distance from Sun: 108.2 million km</li>
+                <li>Number of Moons: 0</li>
+                <li>Type: Rocky Planet</li>
+                <li>Day Length: 243 Earth days</li>
+            </ul>
+        </section>
+
+        <section>
+            <button onclick="showFact('venus')">Show Fun Fact</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 BigPlanetarium</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

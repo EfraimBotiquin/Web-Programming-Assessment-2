@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Page setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Skip link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <!-- Title -->
+        <h1>Mars</h1>
+
+        <!-- Navigation -->
+        <nav aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="mercury.html">Mercury</a>
+            <a href="venus.html">Venus</a>
+            <a href="earth.html">Earth</a>
+
+            <!-- Active page -->
+            <a href="mars.html" class="active">Mars</a>
+
+            <a href="jupiter.html">Jupiter</a>
+            <a href="saturn.html">Saturn</a>
+            <a href="uranus.html">Uranus</a>
+            <a href="neptune.html">Neptune</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <!-- Theme button -->
+        <button class="theme-btn" onclick="toggleTheme()">Theme</button>
+    </header>
+
+    <main id="main-content">
+
+        <!-- About section -->
+        <section>
+            <h2>About Mars</h2>
+            <p>Mars is the fourth planet from the Sun and is often called the Red Planet because of its reddish
+                appearance caused by iron oxide (rust) on its surface.</p>
+            <p>Scientists believe that Mars may have once had water. Today, it has the largest volcano and canyon in the
+                solar system, making it a fascinating planet to study.</p>
+        </section>
+
+        <!-- Image + text -->
+        <section class="image-text1">
+            <img src="mars.jpg" alt="Mars showing a red rocky surface and desert-like landscape">
+            <p>Mars is the fourth planet from the Sun and is known as the Red Planet because of iron oxide, or rust, on
+                its surface. It is a cold desert world with a thin atmosphere made mostly of carbon dioxide. Although
+                Mars is much smaller than Earth, it has some of the largest volcanoes and canyons in the Solar System,
+                showing that it once had a more active geological history. It also has polar ice caps made of water and
+                carbon dioxide, and scientists have found evidence that liquid water may have existed in the past. and
+                future exploration efforts continue
+            </p>
+        </section>
+
+        <!-- More info -->
+        <section class="image-text2">
+            <p>Mars is especially important because scientists believe liquid water once flowed across its surface in
+                the past, shaping valleys, channels, and dry riverbeds. Today, it has polar ice caps made of water and
+                carbon dioxide, along with frequent dust storms that can sometimes cover the entire planet. Mars also
+                has two small moons named Phobos and Deimos, which are believed to be captured asteroids. Research on
+                Mars is very important because it helps scientists investigate whether the planet could once have
+                supported microbial life and understand what conditions are necessary for a planet to become habitable
+                and possibly support life in the future.
+            </p>
+        </section>
+
+        <!-- Video section -->
+        <section>
+            <h3>Educational Video</h3>
+            <p>This video explains the Mars.</p>
+
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/wFTGP7-n3J8?si=syFS5AJMoc_ARfaS"
+                title="Mars educational video">
+            </iframe>
+        </section>
+
+        <!-- Facts -->
+        <section>
+            <h2>Key Facts</h2>
+            <ul>
+                <li>Distance from Sun: 227.9 million km</li>
+                <li>Number of Moons: 2</li>
+                <li>Type: Rocky Planet</li>
+                <li>Day Length: 24.6 hours</li>
+            </ul>
+        </section>
+
+        <!-- Button -->
+        <section>
+            <button onclick="showFact('mars')">Show Fun Fact</button>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 BigPlanetarium</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

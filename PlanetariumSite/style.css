@@ -1,0 +1,273 @@
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base font size */
+html {
+    font-size: 125%;
+}
+
+/* Default theme variables */
+:root {
+    --bg: #0b0f1a;
+    --card: #1f2937;
+    --text: #e5e7eb;
+    --accent: #38bdf8;
+    --header: #111827;
+}
+
+/* Main body styling */
+body {
+    transition: background 0.4s ease, color 0.4s ease;
+    font-family: 'Exo 2', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    overflow-x: hidden;
+}
+
+/* Skip-link */
+.skip-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    background: #38bdf8;
+    color: black;
+    padding: 8px;
+    z-index: 9999;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+/* Header title color */
+header h1 {
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+/* Header layout */
+header {
+    position: relative;
+    background: var(--header);
+    padding: 20px;
+    text-align: center;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* Navigation links */
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin: 5px;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+/* Hover effect on links */
+nav a:hover {
+    background: var(--accent);
+    color: black;
+}
+
+/* Active page link */
+nav a.active {
+    background: var(--accent);
+    color: black;
+}
+
+/* Focus outline for accessibility */
+nav a:focus,
+button:focus {
+    outline: 2px solid #38bdf8;
+}
+
+/* Main layout */
+main {
+    flex: 1;
+    max-width: 900px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Default section styling */
+section {
+    background: var(--card);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Paragraph alignment */
+section p {
+    text-align: justify;
+}
+
+/* Image-text layout (normal direction) */
+.image-text1 {
+    background: var(--card);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Image size for second layout */
+.image-text2 img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Image-text layout (reversed direction) */
+.image-text2 {
+    background: var(--card);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+/* Image size for first layout */
+.image-text1 img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image-text1>*,
+.image-text2>* {
+    flex: 1;
+    min-width: 0;
+}
+
+/* General image styling */
+img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    background: var(--accent);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background: #0ea5e9;
+}
+
+/* THEME 1 - Default */
+.theme-default {
+    --bg: #0b0f1a;
+    --card: #1f2937;
+    --text: #e5e7eb;
+    --accent: #38bdf8;
+    --header: #111827;
+}
+
+/* THEME 2 - Midnight */
+.theme-midnight {
+    --bg: #050816;
+    --card: #111c33;
+    --text: #dbeafe;
+    --accent: #60a5fa;
+    --header: #0a1020;
+}
+
+/* THEME 3 - Nebula */
+.theme-nebula {
+    --bg: #0a001a;
+    --card: #1b0b2e;
+    --text: #f5f3ff;
+    --accent: #c084fc;
+    --header: #120022;
+}
+
+/* THEME 4 - Cosmic Green */
+.theme-cosmic {
+    --bg: #041a12;
+    --card: #0f2e22;
+    --text: #d1fae5;
+    --accent: #34d399;
+    --header: #062019;
+}
+
+/* THEME 5 - Red Space */
+.theme-red {
+    --bg: #160507;
+    --card: #2a0c10;
+    --text: #fee2e2;
+    --accent: #fb7185;
+    --header: #1a0507;
+}
+
+/* Theme button styling */
+.theme-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    font-size: 0.8rem;
+    padding: 6px 10px;
+
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    border-radius: 8px;
+    cursor: pointer;
+
+    background: rgba(15, 23, 42, 0.8);
+    color: #e5e7eb;
+
+    backdrop-filter: blur(8px);
+    transition: 0.3s ease;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 800px) {
+
+    .image-text1,
+    .image-text2 {
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: var(--header);
+    transition: background 0.4s ease, color 0.4s ease;
+}

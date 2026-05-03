@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic page setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Skip link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <!-- Page title -->
+        <h1>Earth</h1>
+
+        <!-- Navigation menu -->
+        <nav aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="mercury.html">Mercury</a>
+            <a href="venus.html">Venus</a>
+
+            <!-- Active page -->
+            <a href="earth.html" class="active">Earth</a>
+
+            <a href="mars.html">Mars</a>
+            <a href="jupiter.html">Jupiter</a>
+            <a href="saturn.html">Saturn</a>
+            <a href="uranus.html">Uranus</a>
+            <a href="neptune.html">Neptune</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <!-- Theme button -->
+        <button class="theme-btn" onclick="toggleTheme()">Theme</button>
+    </header>
+
+    <!-- Main content -->
+    <main id="main-content">
+
+        <section>
+            <!-- Section title -->
+            <h2>About Earth</h2>
+
+            <!-- Short info -->
+            <p>Earth is the third planet from the Sun and the only known planet that supports life. It has liquid water,
+                oxygen, and a suitable climate for living organisms.</p>
+
+            <!-- More info -->
+            <p>About 71% of Earth's surface is covered by water. It also has one natural satellite, the Moon, which
+                affects tides and helps stabilize the planet's rotation.</p>
+        </section>
+
+        <!-- Image with text -->
+        <section class="image-text1">
+            <!-- Earth image -->
+            <img src="earth.jpg" alt="Earth showing continents and oceans from space">
+
+            <!-- Description -->
+            <p>Earth is the third planet from the Sun and the only known planet that supports life. It has liquid water
+                on its surface, a protective atmosphere, and a stable range of temperatures that allow ecosystems to
+                thrive. About 71% of Earth is covered by oceans, lakes, and seas, which play a major role in regulating
+                climate and supporting life. These bodies of water help distribute heat around the planet, influencing
+                weather patterns and maintaining balance in the environment. Its diverse landscapes, including
+                mountains,
+                forests, deserts, and oceans, provide habitats for a wide variety of plants and animals. Together, these
+                features make Earth a unique and dynamic planet within the Solar System.</p>
+        </section>
+
+        <!-- Second text section -->
+        <section class="image-text2">
+            <p>Earth also has one natural satellite, the Moon, which plays an important role in affecting ocean tides
+                and helping to stabilize the planet's rotation over long periods of time. This stability contributes to
+                a consistent climate, which is essential for sustaining life. The gravitational interaction between
+                Earth and the Moon also influences the length of our days and the movement of ocean waters. In addition,
+                Earth's atmosphere, magnetic field, and active geology make it one of the most dynamic and
+                constantly changing planets in the Solar System. Volcanic activity, earthquakes, and the movement of
+                tectonic plates continuously reshape the surface. Scientists continue studying Earth because
+                understanding our home planet helps improve climate science, weather forecasting, and environmental
+                protection. This knowledge is essential for managing natural resources and preparing for future
+                environmental challenges.</p>
+        </section>
+
+        <section>
+            <!-- Video title -->
+            <h3>Educational Video</h3>
+
+            <!-- Video description -->
+            <p>This video explains the Earth.</p>
+
+            <!-- YouTube video -->
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/HCDVN7DCzYE?si=5hhkWbfIYPY393AB"
+                title="Earth educational video">
+            </iframe>
+        </section>
+
+        <section>
+            <!-- Facts title -->
+            <h2>Key Facts</h2>
+
+            <!-- List of facts -->
+            <ul>
+                <li>Distance from Sun: 149.6 million km</li>
+                <li>Number of Moons: 1</li>
+                <li>Type: Rocky Planet</li>
+                <li>Day Length: 24 hours</li>
+            </ul>
+        </section>
+
+        <section>
+            <!-- Button for fun fact -->
+            <button onclick="showFact('earth')">Show Fun Fact</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- Footer -->
+        <p>© 2026 BigPlanetarium</p>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
